@@ -1,4 +1,4 @@
-#Astraeus
+# Astraeus
 
 This is the github repo of the West Virginia University SRAD avionics project named Astraeus.
 
