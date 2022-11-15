@@ -10,23 +10,22 @@ Astraeus is the greek god of the wind and dusk to match not only the idea of our
 	
 EAGLE is used as the PCB designing software. All the libraries needed is included in `./PCB/lib`
 
-- if you are on linux.Use the following command to make a sim links to the default eagle save directory  
+- if you are on linux. Use the following command to make a sim links to the default eagle save directory  
 
 ```
 ln -s ./PCB $HOME/EAGLE/projects/git-pcb
-
 ```
 
-- if you are on windows 10: <Add instructions on how to get EAGLE to recognize the project>
+- if you are on windows 10: Add instructions on how to get EAGLE running
 
 # TO-DO
 
 - [x] Initial planning and requirement gathering.
 - [x] Finalizing the hardware specification.
 - [ ] Schematic design
- - [ ] BMS
- - [ ] voltage regulation
- - [ ] Sensors
- - [ ] USB
- - [ ] upload/download
- - [ ] SD card
+  - [ ] BMS
+  - [ ] voltage regulation
+  - [ ] Sensors
+  - [ ] USB
+  - [ ] upload/download
+  - [ ] SD card
