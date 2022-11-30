@@ -265,16 +265,15 @@ UsedLibraryUrn="urn:adsk.eagle:library:196"
 UsedLibraryUrn="urn:adsk.eagle:library:197"
 UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
-UsedLibrary="/home/hasith/EAGLE/libraries/ESP32.lbr"
-UsedLibrary="/home/hasith/EAGLE/libraries/adafruit.lbr"
-UsedLibrary="/home/hasith/EAGLE/libraries/Astraus/MCP73871-1CCI_ML.lbr"
-UsedLibrary="/home/hasith/EAGLE/libraries/Astraus/MS560702BA03-50.lbr"
-UsedLibrary="/home/hasith/EAGLE/libraries/Astraus/USB3075-30-A.lbr"
+UsedLibrary="lib/MCP73871-1CCI_ML.lbr"
+UsedLibrary="lib/MS560702BA03-50.lbr"
+UsedLibrary="lib/USB3075-30-A.lbr"
+UsedLibrary="lib/adafruit.lbr"
 
 [Win_1]
 Type="Control Panel"
 Number=0
 
 [Desktop]
-Screen="3280 1050"
+Screen="1600 900"
 Window="Win_1"
