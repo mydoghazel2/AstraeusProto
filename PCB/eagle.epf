@@ -269,6 +269,7 @@ UsedLibrary="lib/MCP73871-1CCI_ML.lbr"
 UsedLibrary="lib/MS560702BA03-50.lbr"
 UsedLibrary="lib/USB3075-30-A.lbr"
 UsedLibrary="lib/adafruit.lbr"
+UsedLibrary="lib/TPS7A2055PDBVR.lbr"
 
 [Win_1]
 Type="Control Panel"
