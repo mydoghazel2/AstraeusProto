@@ -9526,6 +9526,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CMI-9605-0580
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="V_bat" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="IC1" library="MS560702BA03-50" deviceset="MS560702BA03-50" device=""/>
@@ -9762,12 +9764,12 @@ Only power pins are in use for now</text>
 <instance part="R16" gate="G$1" x="-119.38" y="-63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-117.0686" y="-68.58" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="LS1" gate="G$1" x="-106.68" y="40.64" smashed="yes">
-<attribute name="NAME" x="-95.25" y="40.64" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-95.25" y="38.1" size="1.778" layer="96" align="center-left"/>
+<instance part="LS1" gate="G$1" x="-100.33" y="40.64" smashed="yes">
+<attribute name="NAME" x="-88.9" y="40.64" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-100.33" y="45.72" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="GND14" gate="1" x="-106.68" y="33.02" smashed="yes">
-<attribute name="VALUE" x="-109.22" y="30.48" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="-100.33" y="33.02" smashed="yes">
+<attribute name="VALUE" x="-102.87" y="30.48" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10040,7 +10042,7 @@ Only power pins are in use for now</text>
 <segment>
 <pinref part="LS1" gate="G$1" pin="-"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="-106.68" y1="38.1" x2="-106.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-100.33" y1="38.1" x2="-100.33" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10371,6 +10373,11 @@ Only power pins are in use for now</text>
 <label x="-45.72" y="50.8" size="1.016" layer="95" xref="yes"/>
 <pinref part="JP2" gate="A" pin="2"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO34"/>
+<wire x1="-123.19" y1="44.45" x2="-118.11" y2="44.45" width="0.1524" layer="91"/>
+<label x="-118.11" y="44.45" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
@@ -10378,12 +10385,22 @@ Only power pins are in use for now</text>
 <label x="-45.72" y="48.26" size="1.016" layer="95" xref="yes"/>
 <pinref part="JP2" gate="A" pin="4"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO35"/>
+<wire x1="-123.19" y1="41.91" x2="-118.11" y2="41.91" width="0.1524" layer="91"/>
+<label x="-118.11" y="41.91" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MISO" class="0">
 <segment>
 <wire x1="-50.8" y1="45.72" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
 <label x="-45.72" y="45.72" size="1.016" layer="95" xref="yes"/>
 <pinref part="JP2" gate="A" pin="6"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO37"/>
+<wire x1="-123.19" y1="36.83" x2="-118.11" y2="36.83" width="0.1524" layer="91"/>
+<label x="-118.11" y="36.83" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_SCLK" class="0">
@@ -10461,38 +10478,26 @@ Only power pins are in use for now</text>
 </net>
 <net name="EMATCH_1" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="IO33"/>
-<wire x1="-123.19" y1="46.99" x2="-118.11" y2="46.99" width="0.1524" layer="91"/>
-<label x="-118.11" y="46.99" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="Q1" gate="G$1" pin="GATE1"/>
 <wire x1="-173.99" y1="-43.18" x2="-179.07" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-179.07" y="-43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO39"/>
+<wire x1="-123.19" y1="31.75" x2="-118.11" y2="31.75" width="0.1524" layer="91"/>
+<label x="-118.11" y="31.75" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="EMATCH_2" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="IO34"/>
-<wire x1="-123.19" y1="44.45" x2="-118.11" y2="44.45" width="0.1524" layer="91"/>
-<label x="-118.11" y="44.45" size="1.016" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="GATE2"/>
 <wire x1="-173.99" y1="-48.26" x2="-179.07" y2="-48.26" width="0.1524" layer="91"/>
 <label x="-179.07" y="-48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="SOUND" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="IO35"/>
-<wire x1="-123.19" y1="41.91" x2="-119.38" y2="41.91" width="0.1524" layer="91"/>
-<label x="-118.11" y="41.91" size="1.016" layer="95" xref="yes"/>
-<pinref part="LS1" gate="G$1" pin="+"/>
-<wire x1="-119.38" y1="41.91" x2="-118.11" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="41.91" x2="-119.38" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="40.64" x2="-106.68" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-119.38" y="41.91"/>
+<pinref part="IC3" gate="G$1" pin="IO40"/>
+<wire x1="-123.19" y1="29.21" x2="-118.11" y2="29.21" width="0.1524" layer="91"/>
+<label x="-118.11" y="29.21" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="EXT_SW+" class="0">
@@ -10616,6 +10621,22 @@ Only power pins are in use for now</text>
 <wire x1="-195.58" y1="-78.74" x2="-99.06" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="-78.74" x2="-99.06" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="-27.94" x2="-195.58" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPI_SCK" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO36"/>
+<wire x1="-123.19" y1="39.37" x2="-118.11" y2="39.37" width="0.1524" layer="91"/>
+<label x="-118.11" y="39.37" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<wire x1="-107.95" y1="34.29" x2="-107.95" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="LS1" gate="G$1" pin="+"/>
+<wire x1="-107.95" y1="40.64" x2="-100.33" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="IO38"/>
+<wire x1="-123.19" y1="34.29" x2="-107.95" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
