@@ -2,8 +2,13 @@
 
 [x] LDO
 [x] BMS
-[  ] Ematch circuit
-[  ] outputs
-[  ] inputs
-[  ] Pressure sensor
+[x] Ematch circuit
+[ ] outputs
+[ ] inputs
+[x] Pressure sensor
 
+## Known bugs
+
+- The SPI connections are missing on this schematic.This needs to be corrected
+- The final board dimentions are too large due to the lipo placemnt on the board.
+- This is a usable version of the schematic as far as the part placement is considered. This needs to be further modified to get a final version
