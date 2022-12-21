@@ -11079,12 +11079,12 @@ Only power pins are in use for now</text>
 <instance part="R16" gate="G$1" x="-119.38" y="-63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-117.0686" y="-68.58" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="LS1" gate="G$1" x="-106.68" y="40.64" smashed="yes">
-<attribute name="NAME" x="-95.25" y="40.64" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-95.25" y="38.1" size="1.778" layer="96" align="center-left"/>
+<instance part="LS1" gate="G$1" x="-99.06" y="40.64" smashed="yes">
+<attribute name="NAME" x="-87.63" y="40.64" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-87.63" y="38.1" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="GND14" gate="1" x="-106.68" y="33.02" smashed="yes">
-<attribute name="VALUE" x="-109.22" y="30.48" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="-99.06" y="34.29" smashed="yes">
+<attribute name="VALUE" x="-101.6" y="31.75" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-135.89" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="-133.858" y="158.496" size="1.778" layer="95" rot="R180"/>
@@ -11400,7 +11400,7 @@ Only power pins are in use for now</text>
 <segment>
 <pinref part="LS1" gate="G$1" pin="-"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="-106.68" y1="38.1" x2="-106.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="38.1" x2="-99.06" y2="36.83" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -11764,6 +11764,11 @@ Only power pins are in use for now</text>
 <label x="-45.72" y="50.8" size="1.016" layer="95" xref="yes"/>
 <pinref part="JP2" gate="A" pin="2"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO34"/>
+<wire x1="-123.19" y1="44.45" x2="-119.38" y2="44.45" width="0.1524" layer="91"/>
+<label x="-119.38" y="44.45" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
@@ -11771,12 +11776,22 @@ Only power pins are in use for now</text>
 <label x="-45.72" y="48.26" size="1.016" layer="95" xref="yes"/>
 <pinref part="JP2" gate="A" pin="4"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO35"/>
+<wire x1="-123.19" y1="41.91" x2="-119.38" y2="41.91" width="0.1524" layer="91"/>
+<label x="-119.38" y="41.91" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MISO" class="0">
 <segment>
 <wire x1="-50.8" y1="45.72" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
 <label x="-45.72" y="45.72" size="1.016" layer="95" xref="yes"/>
 <pinref part="JP2" gate="A" pin="6"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO37"/>
+<wire x1="-123.19" y1="36.83" x2="-119.38" y2="36.83" width="0.1524" layer="91"/>
+<label x="-119.38" y="36.83" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_SCLK" class="0">
@@ -11792,12 +11807,22 @@ Only power pins are in use for now</text>
 <wire x1="-58.42" y1="38.1" x2="-66.04" y2="38.1" width="0.1524" layer="91"/>
 <label x="-66.04" y="38.1" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO9"/>
+<wire x1="-156.21" y1="19.05" x2="-161.29" y2="19.05" width="0.1524" layer="91"/>
+<label x="-161.29" y="19.05" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="IO_2" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="13"/>
 <wire x1="-58.42" y1="35.56" x2="-66.04" y2="35.56" width="0.1524" layer="91"/>
 <label x="-66.04" y="35.56" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO10"/>
+<wire x1="-156.21" y1="16.51" x2="-161.29" y2="16.51" width="0.1524" layer="91"/>
+<label x="-161.29" y="16.51" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="IO_3" class="0">
@@ -11806,12 +11831,22 @@ Only power pins are in use for now</text>
 <wire x1="-50.8" y1="38.1" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
 <label x="-45.72" y="38.1" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO11"/>
+<wire x1="-156.21" y1="13.97" x2="-161.29" y2="13.97" width="0.1524" layer="91"/>
+<label x="-161.29" y="13.97" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="IO_4" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="14"/>
 <wire x1="-50.8" y1="35.56" x2="-45.72" y2="35.56" width="0.1524" layer="91"/>
 <label x="-45.72" y="35.56" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO12"/>
+<wire x1="-156.21" y1="11.43" x2="-161.29" y2="11.43" width="0.1524" layer="91"/>
+<label x="-161.29" y="11.43" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -11854,38 +11889,35 @@ Only power pins are in use for now</text>
 </net>
 <net name="EMATCH_1" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="IO33"/>
-<wire x1="-123.19" y1="46.99" x2="-118.11" y2="46.99" width="0.1524" layer="91"/>
-<label x="-118.11" y="46.99" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="Q1" gate="G$1" pin="GATE1"/>
 <wire x1="-173.99" y1="-43.18" x2="-179.07" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-179.07" y="-43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO39"/>
+<wire x1="-123.19" y1="31.75" x2="-116.84" y2="31.75" width="0.1524" layer="91"/>
+<label x="-116.84" y="31.75" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="EMATCH_2" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="IO34"/>
-<wire x1="-123.19" y1="44.45" x2="-118.11" y2="44.45" width="0.1524" layer="91"/>
-<label x="-118.11" y="44.45" size="1.016" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="GATE2"/>
 <wire x1="-173.99" y1="-48.26" x2="-179.07" y2="-48.26" width="0.1524" layer="91"/>
 <label x="-179.07" y="-48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO40"/>
+<wire x1="-123.19" y1="29.21" x2="-116.84" y2="29.21" width="0.1524" layer="91"/>
+<label x="-116.84" y="29.21" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SOUND" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="IO35"/>
-<wire x1="-123.19" y1="41.91" x2="-119.38" y2="41.91" width="0.1524" layer="91"/>
-<label x="-118.11" y="41.91" size="1.016" layer="95" xref="yes"/>
 <pinref part="LS1" gate="G$1" pin="+"/>
-<wire x1="-119.38" y1="41.91" x2="-118.11" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="41.91" x2="-119.38" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="40.64" x2="-106.68" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-119.38" y="41.91"/>
+<pinref part="IC3" gate="G$1" pin="IO38"/>
+<wire x1="-105.41" y1="40.64" x2="-99.06" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-105.41" y1="40.64" x2="-105.41" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="-105.41" y1="34.29" x2="-123.19" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EMATCH_N+" class="1">
@@ -12043,6 +12075,13 @@ Only power pins are in use for now</text>
 <junction x="-53.34" y="-5.08"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="-35.56" y1="-2.54" x2="-53.34" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPI_SCK" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="IO36"/>
+<wire x1="-123.19" y1="39.37" x2="-119.38" y2="39.37" width="0.1524" layer="91"/>
+<label x="-119.38" y="39.37" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

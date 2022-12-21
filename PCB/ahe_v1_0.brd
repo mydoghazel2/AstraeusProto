@@ -2903,27 +2903,41 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI_CS">
 <contactref element="JP2" pad="2"/>
+<contactref element="IC3" pad="28"/>
+<wire x1="19.05" y1="10.16" x2="63.36" y2="52.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_MOSI">
 <contactref element="JP2" pad="4"/>
+<contactref element="IC3" pad="29"/>
+<wire x1="21.59" y1="10.16" x2="63.36" y2="53.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_MISO">
 <contactref element="JP2" pad="6"/>
+<contactref element="IC3" pad="31"/>
+<wire x1="24.13" y1="10.16" x2="63.36" y2="56.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_SCLK">
 <contactref element="JP2" pad="8"/>
 </signal>
 <signal name="IO_1">
 <contactref element="JP2" pad="11"/>
+<contactref element="IC3" pad="12"/>
+<wire x1="31.75" y1="7.62" x2="45.86" y2="56.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IO_2">
 <contactref element="JP2" pad="13"/>
+<contactref element="IC3" pad="13"/>
+<wire x1="34.29" y1="7.62" x2="45.86" y2="55.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IO_3">
 <contactref element="JP2" pad="12"/>
+<contactref element="IC3" pad="14"/>
+<wire x1="31.75" y1="10.16" x2="45.86" y2="53.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IO_4">
 <contactref element="JP2" pad="14"/>
+<contactref element="IC3" pad="15"/>
+<wire x1="34.29" y1="10.16" x2="45.86" y2="52.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="IC3" pad="22"/>
@@ -2946,7 +2960,6 @@ design rules under a new name.</description>
 <wire x1="56.87695" y1="50.10785" x2="56.86" y2="50.155" width="0.1778" layer="1"/>
 </signal>
 <signal name="EMATCH_1">
-<contactref element="IC3" pad="27"/>
 <contactref element="Q1" pad="2"/>
 <wire x1="12.63015" y1="23.7744" x2="12.3825" y2="23.7744" width="0.1778" layer="1"/>
 <wire x1="13.39215" y1="23.0124" x2="12.63015" y2="23.7744" width="0.1778" layer="1"/>
@@ -2967,10 +2980,10 @@ design rules under a new name.</description>
 <wire x1="66.04" y1="48.2092" x2="66.04" y2="34.09315" width="0.1778" layer="1"/>
 <wire x1="63.3984" y1="50.8508" x2="66.04" y2="48.2092" width="0.1778" layer="1"/>
 <wire x1="12.3825" y1="23.7744" x2="12.358" y2="23.805" width="0.1778" layer="1"/>
-<wire x1="63.3984" y1="50.8508" x2="63.36" y2="50.905" width="0.1778" layer="1"/>
+<contactref element="IC3" pad="33"/>
+<wire x1="63.3984" y1="50.8508" x2="63.36" y2="59.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EMATCH_2">
-<contactref element="IC3" pad="28"/>
 <contactref element="Q1" pad="4"/>
 <wire x1="12.3825" y1="46.31055" x2="12.3825" y2="25.17775" width="0.1778" layer="1"/>
 <wire x1="38.71595" y1="72.644" x2="12.3825" y2="46.31055" width="0.1778" layer="1"/>
@@ -2980,10 +2993,10 @@ design rules under a new name.</description>
 <wire x1="61.9125" y1="52.41925" x2="51.09845" y2="63.2333" width="0.1778" layer="1"/>
 <wire x1="63.31585" y1="52.41925" x2="61.9125" y2="52.41925" width="0.1778" layer="1"/>
 <wire x1="12.3825" y1="25.17775" x2="12.358" y2="25.105" width="0.1778" layer="1"/>
-<wire x1="63.31585" y1="52.41925" x2="63.36" y2="52.405" width="0.1778" layer="1"/>
+<contactref element="IC3" pad="34"/>
+<wire x1="63.31585" y1="52.41925" x2="63.36" y2="61.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SOUND">
-<contactref element="IC3" pad="29"/>
 <contactref element="LS1" pad="1"/>
 <wire x1="63.5635" y1="53.8226" x2="63.3984" y2="53.8226" width="0.1778" layer="1"/>
 <wire x1="64.389" y1="52.9971" x2="63.5635" y2="53.8226" width="0.1778" layer="1"/>
@@ -2997,9 +3010,10 @@ design rules under a new name.</description>
 <wire x1="60.83935" y1="25.83815" x2="60.83935" y2="42.5958" width="0.1778" layer="16"/>
 <wire x1="62.82055" y1="23.85695" x2="60.83935" y2="25.83815" width="0.1778" layer="16"/>
 <wire x1="62.82055" y1="23.52675" x2="62.82055" y2="23.85695" width="0.1778" layer="16"/>
-<wire x1="63.3984" y1="53.8226" x2="63.36" y2="53.905" width="0.1778" layer="1"/>
 <wire x1="62.82055" y1="23.52675" x2="62.865" y2="23.495" width="0.1778" layer="16"/>
 <via x="60.83935" y="42.5958" extent="1-16" drill="0.35"/>
+<contactref element="IC3" pad="32"/>
+<wire x1="63.3984" y1="53.8226" x2="63.36" y2="58.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EMATCH_N+" class="1">
 <contactref element="CN3" pad="2"/>
@@ -3147,6 +3161,9 @@ design rules under a new name.</description>
 <wire x1="4.4577" y1="11.2268" x2="4.4577" y2="12.46505" width="0.254" layer="1"/>
 <wire x1="5.53085" y1="10.15365" x2="4.4577" y2="11.2268" width="0.254" layer="1"/>
 <wire x1="4.4577" y1="12.46505" x2="4.445" y2="12.545" width="0.254" layer="1"/>
+</signal>
+<signal name="SPI_SCK">
+<contactref element="IC3" pad="30"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
