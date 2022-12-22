@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8779,70 +8779,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="103KT1005T-1P">
-<description>&lt;NTC Thermistors 103kohm 1% 0402&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="THRMC1005X60N">
-<description>&lt;b&gt;0402&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-0.55" y="0" dx="0.75" dy="0.65" layer="1"/>
-<smd name="2" x="0.55" y="0" dx="0.75" dy="0.65" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.175" y1="0.6" x2="1.175" y2="0.6" width="0.05" layer="51"/>
-<wire x1="1.175" y1="0.6" x2="1.175" y2="-0.6" width="0.05" layer="51"/>
-<wire x1="1.175" y1="-0.6" x2="-1.175" y2="-0.6" width="0.05" layer="51"/>
-<wire x1="-1.175" y1="-0.6" x2="-1.175" y2="0.6" width="0.05" layer="51"/>
-<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
-<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
-<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
-<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
-<wire x1="0" y1="0.15" x2="0" y2="-0.15" width="0.2" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="103KT1005T-1P">
-<wire x1="5.08" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="5.588" y1="-2.032" x2="7.112" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="10.668" y1="2.032" x2="7.112" y2="-2.032" width="0.254" layer="94"/>
-<text x="13.97" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="13.97" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" visible="pad" length="middle"/>
-<pin name="2" x="17.78" y="0" visible="pad" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="103KT1005T-1P" prefix="RT">
-<description>&lt;b&gt;NTC Thermistors 103kohm 1% 0402&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="103KT1005T-1P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="THRMC1005X60N">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="NTC Thermistors 103kohm 1% 0402" constant="no"/>
-<attribute name="HEIGHT" value="0.6mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Semitec" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="103KT1005T-1P" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="954-103KT1005T-1P" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Semitec/103KT1005T-1P?qs=wgO0AD0o1vtbPaSgVd2b3g%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="BU33SD5WG-TR">
 <description>&lt;LDO regulator,3.3V,0.5A,standby,SSOP5 ROHM BU33SD5WG-TR, LDO Voltage Regulator, 0.5A, 3.3 V +/-2%, 1.7  6 Vin, 5-Pin SSOP&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -10848,6 +10784,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CMI-9605-0580
 <class number="1" name="PWR" width="0.254" drill="0">
 <clearance class="1" value="0.1524"/>
 </class>
+<class number="2" name="V_bat" width="0.3048" drill="0">
+<clearance class="2" value="0.1524"/>
+</class>
 </classes>
 <parts>
 <part name="IC1" library="MS560702BA03-50" deviceset="MS560702BA03-50" device=""/>
@@ -10868,7 +10807,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CMI-9605-0580
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="RT1" library="103KT1005T-1P" deviceset="103KT1005T-1P" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="PS1" library="BU33SD5WG-TR" deviceset="BU33SD5WG-TR" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10884,7 +10822,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CMI-9605-0580
 <part name="S2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2"/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="/90" package3d_urn="urn:adsk.eagle:package:22404/2"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="33"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="33"/>
 <part name="Q1" library="TSM200N03DPQ33_RGG" deviceset="TSM200N03DPQ33_RGG" device=""/>
@@ -10910,6 +10847,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CMI-9605-0580
 <part name="CN3" library="adafruit" deviceset="1X4" device="-3.5MM"/>
 <part name="CN4" library="adafruit" deviceset="1X4" device="-3.5MM"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -10989,10 +10928,6 @@ Only power pins are in use for now</text>
 <instance part="P+3" gate="VCC" x="-82.55" y="152.4" smashed="yes">
 <attribute name="VALUE" x="-85.09" y="149.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="RT1" gate="G$1" x="-96.52" y="106.68" smashed="yes">
-<attribute name="NAME" x="-93.98" y="113.03" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-93.98" y="110.49" size="1.778" layer="96" align="center-left"/>
-</instance>
 <instance part="GND6" gate="1" x="-96.52" y="101.6" smashed="yes">
 <attribute name="VALUE" x="-99.06" y="99.06" size="1.778" layer="96"/>
 </instance>
@@ -11033,9 +10968,9 @@ Only power pins are in use for now</text>
 <instance part="R9" gate="G$1" x="-101.6" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="-103.0986" y="15.24" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="S2" gate="1" x="-91.44" y="11.43" smashed="yes" rot="R270">
-<attribute name="NAME" x="-93.98" y="17.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-88.265" y="15.24" size="1.778" layer="96"/>
+<instance part="S2" gate="1" x="-91.44" y="11.43" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-88.9" y="17.78" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-94.615" y="15.24" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND8" gate="1" x="-160.02" y="-22.86" smashed="yes">
 <attribute name="VALUE" x="-162.56" y="-25.4" size="1.778" layer="96"/>
@@ -11043,10 +10978,6 @@ Only power pins are in use for now</text>
 <instance part="JP2" gate="A" x="-55.88" y="43.18" smashed="yes">
 <attribute name="NAME" x="-62.23" y="53.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-62.23" y="30.48" size="1.778" layer="96"/>
-</instance>
-<instance part="JP3" gate="A" x="-123.19" y="129.54" smashed="yes">
-<attribute name="NAME" x="-129.54" y="137.795" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-129.54" y="121.92" size="1.778" layer="96"/>
 </instance>
 <instance part="R10" gate="G$1" x="-166.37" y="-8.89" smashed="yes" rot="R180">
 <attribute name="NAME" x="-160.02" y="-10.3886" size="1.778" layer="95" rot="R180"/>
@@ -11130,6 +11061,14 @@ Only power pins are in use for now</text>
 <attribute name="NAME" x="-39.37" y="3.175" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-39.37" y="-7.62" size="1.778" layer="96"/>
 </instance>
+<instance part="JP4" gate="G$1" x="-88.9" y="111.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="-94.615" y="105.41" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-83.82" y="105.41" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="JP5" gate="A" x="-123.19" y="129.54" smashed="yes">
+<attribute name="NAME" x="-129.54" y="137.795" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-129.54" y="121.92" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11172,9 +11111,9 @@ Only power pins are in use for now</text>
 <junction x="-82.55" y="147.32"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="4"/>
 <wire x1="-125.73" y1="127" x2="-133.35" y2="127" width="0.1524" layer="91"/>
 <label x="-133.35" y="127" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="4"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -11182,7 +11121,7 @@ Only power pins are in use for now</text>
 <label x="-142.24" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="2">
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -11266,9 +11205,10 @@ Only power pins are in use for now</text>
 <junction x="-76.2" y="66.04"/>
 </segment>
 <segment>
-<pinref part="RT1" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="-96.52" y1="106.68" x2="-96.52" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="-91.44" y1="109.22" x2="-91.44" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="104.14" x2="-96.52" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -11348,12 +11288,12 @@ Only power pins are in use for now</text>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="-119.38" y1="-17.78" x2="-119.38" y2="-13.97" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="-13.97" x2="-85.09" y2="-13.97" width="0.1524" layer="91"/>
-<pinref part="S2" gate="1" pin="S"/>
-<wire x1="-86.36" y1="11.43" x2="-85.09" y2="11.43" width="0.1524" layer="91"/>
-<pinref part="S2" gate="1" pin="S1"/>
-<wire x1="-85.09" y1="11.43" x2="-85.09" y2="8.89" width="0.1524" layer="91"/>
-<wire x1="-85.09" y1="8.89" x2="-86.36" y2="8.89" width="0.1524" layer="91"/>
 <wire x1="-85.09" y1="-13.97" x2="-85.09" y2="8.89" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="P"/>
+<wire x1="-85.09" y1="8.89" x2="-85.09" y2="11.43" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="11.43" x2="-85.09" y2="11.43" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="P1"/>
+<wire x1="-86.36" y1="8.89" x2="-85.09" y2="8.89" width="0.1524" layer="91"/>
 <junction x="-85.09" y="8.89"/>
 </segment>
 <segment>
@@ -11373,9 +11313,9 @@ Only power pins are in use for now</text>
 <pinref part="JP2" gate="A" pin="10"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
 <wire x1="-125.73" y1="134.62" x2="-133.35" y2="134.62" width="0.1524" layer="91"/>
 <label x="-133.35" y="134.62" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="SOURCE1"/>
@@ -11597,9 +11537,10 @@ Only power pins are in use for now</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="RT1" gate="G$1" pin="2"/>
 <pinref part="IC2" gate="G$1" pin="THERM"/>
-<wire x1="-78.74" y1="106.68" x2="-72.39" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="-88.9" y1="109.22" x2="-88.9" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="106.68" x2="-72.39" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -11682,9 +11623,9 @@ Only power pins are in use for now</text>
 <label x="-119.38" y="21.59" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
 <wire x1="-125.73" y1="129.54" x2="-133.35" y2="129.54" width="0.1524" layer="91"/>
 <label x="-133.35" y="129.54" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="SERIAL_ESP_RX" class="0">
@@ -11694,9 +11635,9 @@ Only power pins are in use for now</text>
 <label x="-119.38" y="19.05" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="2"/>
 <wire x1="-125.73" y1="132.08" x2="-133.35" y2="132.08" width="0.1524" layer="91"/>
 <label x="-133.35" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -11741,21 +11682,6 @@ Only power pins are in use for now</text>
 <junction x="-173.99" y="39.37"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-173.99" y1="41.91" x2="-173.99" y2="39.37" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="EN"/>
-<wire x1="-123.19" y1="11.43" x2="-101.6" y2="11.43" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="S2" gate="1" pin="P"/>
-<wire x1="-101.6" y1="11.43" x2="-97.79" y2="11.43" width="0.1524" layer="91"/>
-<junction x="-101.6" y="11.43"/>
-<pinref part="S2" gate="1" pin="P1"/>
-<wire x1="-97.79" y1="11.43" x2="-96.52" y2="11.43" width="0.1524" layer="91"/>
-<wire x1="-97.79" y1="11.43" x2="-97.79" y2="8.89" width="0.1524" layer="91"/>
-<wire x1="-97.79" y1="8.89" x2="-96.52" y2="8.89" width="0.1524" layer="91"/>
-<junction x="-97.79" y="11.43"/>
 </segment>
 </net>
 <net name="SPI_CS" class="0">
@@ -11954,7 +11880,7 @@ Only power pins are in use for now</text>
 <label x="-49.53" y="-21.59" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="EMATCH_2-" class="1">
+<net name="EMATCH_2-" class="2">
 <segment>
 <pinref part="Q1" gate="G$1" pin="DRAIN2_2"/>
 <wire x1="-135.89" y1="-40.64" x2="-133.35" y2="-40.64" width="0.1524" layer="91"/>
@@ -12082,6 +12008,21 @@ Only power pins are in use for now</text>
 <pinref part="IC3" gate="G$1" pin="IO36"/>
 <wire x1="-123.19" y1="39.37" x2="-119.38" y2="39.37" width="0.1524" layer="91"/>
 <label x="-119.38" y="39.37" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="S2" gate="1" pin="S1"/>
+<pinref part="IC3" gate="G$1" pin="EN"/>
+<wire x1="-123.19" y1="11.43" x2="-101.6" y2="11.43" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="-101.6" y1="11.43" x2="-97.79" y2="11.43" width="0.1524" layer="91"/>
+<junction x="-101.6" y="11.43"/>
+<wire x1="-97.79" y1="11.43" x2="-97.79" y2="8.89" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="S"/>
+<wire x1="-96.52" y1="11.43" x2="-97.79" y2="11.43" width="0.1524" layer="91"/>
+<junction x="-97.79" y="11.43"/>
+<wire x1="-96.52" y1="8.89" x2="-97.79" y2="8.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
