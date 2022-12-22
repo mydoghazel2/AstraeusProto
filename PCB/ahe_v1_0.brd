@@ -2445,6 +2445,10 @@ IO_4</text>
 <text x="41.656" y="50.8" size="1.27" layer="25">PROG</text>
 <text x="39.4208" y="24.638" size="1.27" layer="25">KE8TJE
 KC3RXZ</text>
+<text x="43.2308" y="12.0396" size="1.27" layer="25" rot="R90">Vcc
+Tx
+Rx
+GND</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
