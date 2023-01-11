@@ -21,7 +21,8 @@ EAGLE is used as the PCB designing software. All the libraries needed is include
 - if you are on linux. Use the following command to make a sim links to the default eagle save directory  
 
 ```
-ln -s ./PCB $HOME/EAGLE/projects/git-pcb
+cd ~/EAGLE/projects
+ln -s ~/Projects/Astraeus/PCB/ git-pcb
 ```
 
 - if you are on windows 10: Add instructions on how to get EAGLE running
